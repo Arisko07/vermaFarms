@@ -1,20 +1,27 @@
 <html>
     <head>
+        
         <title>Verma Farms - Home Page -R3</title>
-        <link type="text/css" rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&amp;display=swap">
+        
     </head>
+    <style>
+       .wave-1-bottom{        
+        transform: rotate(180deg);        
+       }
+        .container{
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
     <body>
-
+        <div class="container">
+            <div class="wave-1-top" id="wave-1-top"></div>
+            <div class="wave-1-bottom" id="wave-1-bottom"></div>
+        </div>
+        <button id="container"></button>
     </body>
-    <script>
-    $(document).ready(function () {
-        lottie.loadAnimation({
-            container: document.getElementById('hero-banner-wave'), // the dom element that will contain the animation
-            renderer: 'svg',
-            loop: true,
-            autoplay: true,
-            path: '' // the path to the animation json
-        });
-    });
-    </script>
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
+    <script type="module" src="main.js"></script>
+   
 </html>
