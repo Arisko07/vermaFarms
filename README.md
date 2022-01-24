@@ -1,5 +1,5 @@
 # vermaFarms
 
 # how to run
-install Live Server Extension
-Open html file with live server
+1. install Live Server Extension
+2. Open html file with live server
