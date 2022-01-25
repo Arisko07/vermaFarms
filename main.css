@@ -2,6 +2,14 @@ p {
   line-height: 1em;
 }
 
+button {
+  font-size: inherit;
+  color: #FFFFFF !important;
+  padding: 1% 5% !important;
+  background-color: #f6914e !important;
+  border-color: #f6914e !important;
+}
+
 .container {
   font-family: "Fira Sans", sans-serif;
 }
@@ -32,6 +40,13 @@ p {
 .container .wave-1-top {
   position: absolute;
   bottom: -1px;
+  height: fit-content;
+  padding: 0;
+}
+.container .wave-1-bottom {
+  position: absolute;
+  top: -5%;
+  z-index: 99;
   height: fit-content;
   padding: 0;
 }
@@ -66,7 +81,7 @@ p {
 }
 
 .third-row {
-  padding-bottom: 20%;
+  padding-bottom: 10%;
   background-color: #faead8;
   text-align: center;
 }
@@ -93,13 +108,45 @@ p {
 .third-row button {
   background-color: #3c562c !important;
   padding: 1% 5%;
-  border-color: #3c562c;
+  border-color: #3c562c !important;
 }
 
-button {
-  font-size: inherit;
-  color: #FFFFFF !important;
-  padding: 1% 5%;
+.fourth-row {
+  padding: 3% 0 5%;
+}
+.fourth-row img {
+  max-width: 100%;
+}
+
+.fifth-row .leaf {
+  position: absolute;
+  width: 25%;
+  padding: 0;
+}
+.fifth-row .leafLeft {
+  top: -20%;
+  left: 0;
+}
+.fifth-row .leafRight {
+  right: 0;
+  top: 0%;
+  width: 10%;
+}
+.fifth-row .row {
+  background-color: #faead8;
+  padding: 10% 0;
+}
+.fifth-row .row .col-12 {
+  z-index: 99;
+}
+.fifth-row .row .col-12 div {
+  margin-bottom: 5%;
+}
+.fifth-row img {
+  max-width: 100%;
+}
+.fifth-row button {
+  padding: 1% 10% !important;
 }
 
 .primaryText {

@@ -18,6 +18,13 @@ $lightWave2: #ba9c8a;
 p{    
     line-height: 1em;
 }
+button{
+    font-size: inherit;
+    color:$white !important;
+    padding:1% 5% !important;
+    background-color: $orange !important;
+    border-color: $orange !important;
+}
 .container{
     font-family: 'Fira Sans', sans-serif;    
     img{padding: 0;}
@@ -41,6 +48,13 @@ p{
     .wave-1-top{
         position: absolute;
         bottom: -1px;
+        height: fit-content;
+        padding: 0;
+    }
+    .wave-1-bottom{
+        position: absolute;
+        top: -5%;
+        z-index: 99;
         height: fit-content;
         padding: 0;
     }
@@ -74,7 +88,7 @@ p{
     }
 }
 .third-row{
-    padding-bottom: 20%;
+    padding-bottom: 10%;
     background-color: $wave1;
     text-align: center;
     img{
@@ -97,9 +111,41 @@ p{
         align-items: center;
         img{width: 100%;}
     }
-    button{background-color: $darkGreen !important; padding: 1% 5%;border-color: $darkGreen;}
+    button{background-color: $darkGreen !important; padding: 1% 5%;border-color: $darkGreen !important;}
 }
-button{font-size: inherit;color:$white !important;padding:1% 5%;}
+.fourth-row{
+    padding: 3% 0 5%;
+    img{max-width: 100%;}
+}
+.fifth-row{
+    .leaf{
+        position: absolute;
+        width: 25%;
+        padding: 0;
+    }
+    .leafLeft{
+        top:-20%;
+        left:0;
+    }
+    .leafRight{
+        right: 0;
+        top: 0%;
+        width: 10%;
+    }
+    .row{
+        background-color: $wave1;
+        padding: 10% 0;
+        .col-12{
+            z-index: 99;
+            div{
+                margin-bottom: 5%;
+            }
+        }
+    }   
+    img{max-width: 100%;}
+    button{padding: 1% 10% !important;}
+}
+
 .primaryText{
     font-family: $primaryFont;
     font-weight: $primaryWeight;

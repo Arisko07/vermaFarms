@@ -25,6 +25,13 @@ $(document).ready(function () {
         renderer: 'svg',
         loop: true,
         autoplay: true,
-        path: './waves/data-color-2.json' // the path to the animation json
+        path: './waves/data-color-1.json' // the path to the animation json
+    });
+    lottie.loadAnimation({
+        container: document.getElementById('wave-5-top'), // the dom element that will contain the animation
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: './waves/data-color-1.json' // the path to the animation json
     });
 });
