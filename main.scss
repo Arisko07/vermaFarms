@@ -16,10 +16,95 @@ $wave2: #fefaf8;
 $lightWave2: #ba9c8a;
 
 .container{
-    font-family: 'Fira Sans', sans-serif;
-    background-color: red;
+    font-family: 'Fira Sans', sans-serif;    
+    img{padding: 0;}
+    .inner-content{
+        position: absolute !important;
+        width: 100%;
+        height: 100%;        
+        padding: 4% 2% 0;
+        margin: 0;
+        .row:first-child{font-size: 1.5vw;}
+        .row:nth-child(2){
+            font-size: 2vw;
+            margin-top: 15%;
+            padding-left: 5%;
+            .col-12:not(:first-child){
+                margin-top: 2%;
+            }
+        }
+    }
+    .row{position: relative;}
+    .wave-1-top{
+        position: absolute;
+        bottom: -1px;
+        height: fit-content;
+        padding: 0;
+    }
+    .largeFont{
+        font-size: 3vw;
+        line-height: 1em;
+    }
 }
+.second-row{
+    text-align: center;
+    line-height: 1em;
+    background-color:$wave2;
+    padding-bottom: 20%;
+    img{width: 100%;}
+    p{
+        font-size: 1.3vw;
+        line-height: 1em;
+    }
+    .row:first-child{
+        .col-12:nth-child(2){
+            margin-top: 3%;
+        }
+    }
+    .col-12.col-md-4{position: relative;}
+    
+    .image-description{
+        position: absolute;
+        bottom: 4%;
+        left: 8%;
+        right: 8%;
+        padding: 5%;
+        
+        border-radius: 0 0 13% 13%;
+        background-color: $white;       
+    }
+}
+button{font-size: inherit;color:$white !important;padding:1% 5%;}
 .primaryText{
-    font-family: 'Freight Sans Pro';
-    font-weight: 400;
+    font-family: $primaryFont;
+    font-weight: $primaryWeight;
 }
+.secondaryText{
+    font-family: $secondaryFont;
+    font-weight: $secondaryWeight;
+}
+.brown{color:$brown}
+.lightBrown{color:$lightBrown;}
+.medbrown{color:$medBrown;}
+/*
+.first-row{
+    background-image: url(./Image/homepage-bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: auto;    
+}
+@media only screen and (max-device-width: 590px){
+    
+}
+*/
+@media (hover: none) {
+    .container{margin: 0;max-width: 100% !important;}
+    .first-row{
+        text-align: center;
+    }
+    .container .inner-content .row:nth-child(2) {
+        font-size: 2vw;
+        margin-top: 20%;
+        padding-left: 0%;
+    }
+  }

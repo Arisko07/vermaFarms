@@ -1,11 +1,124 @@
 .container {
   font-family: "Fira Sans", sans-serif;
-  background-color: red;
+}
+.container img {
+  padding: 0;
+}
+.container .inner-content {
+  position: absolute !important;
+  width: 100%;
+  height: 100%;
+  padding: 4% 2% 0;
+  margin: 0;
+}
+.container .inner-content .row:first-child {
+  font-size: 1.5vw;
+}
+.container .inner-content .row:nth-child(2) {
+  font-size: 2vw;
+  margin-top: 15%;
+  padding-left: 5%;
+}
+.container .inner-content .row:nth-child(2) .col-12:not(:first-child) {
+  margin-top: 2%;
+}
+.container .row {
+  position: relative;
+}
+.container .wave-1-top {
+  position: absolute;
+  bottom: -1px;
+  height: fit-content;
+  padding: 0;
+}
+.container .largeFont {
+  font-size: 3vw;
+  line-height: 1em;
+}
+
+.second-row {
+  text-align: center;
+  line-height: 1em;
+  background-color: #fefaf8;
+  padding-bottom: 20%;
+}
+.second-row img {
+  width: 100%;
+}
+.second-row p {
+  font-size: 1.3vw;
+  line-height: 1em;
+}
+.second-row .row:first-child .col-12:nth-child(2) {
+  margin-top: 3%;
+}
+.second-row .col-12.col-md-4 {
+  position: relative;
+}
+.second-row .image-description {
+  position: absolute;
+  bottom: 4%;
+  left: 8%;
+  right: 8%;
+  padding: 5%;
+  border-radius: 0 0 13% 13%;
+  background-color: #FFFFFF;
+}
+
+button {
+  font-size: inherit;
+  color: #FFFFFF !important;
+  padding: 1% 5%;
 }
 
 .primaryText {
   font-family: "Freight Sans Pro";
   font-weight: 400;
+}
+
+.secondaryText {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 900;
+}
+
+.brown {
+  color: #43353a;
+}
+
+.lightBrown {
+  color: #8d7971;
+}
+
+.medbrown {
+  color: #998c7a;
+}
+
+/*
+.first-row{
+    background-image: url(./Image/homepage-bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: auto;    
+}
+@media only screen and (max-device-width: 590px){
+
+}
+*/
+@media (hover: none) {
+  .container {
+    margin: 0;
+    max-width: 100% !important;
+  }
+
+  .first-row {
+    text-align: center;
+  }
+
+  .container .inner-content .row:nth-child(2) {
+    font-size: 2vw;
+    margin-top: 20%;
+    padding-left: 0%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
