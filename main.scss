@@ -7,6 +7,7 @@ $secondaryWeight: 900;
 //colors
 $white: #FFFFFF;
 $black: #000000;
+$darkGreen:#3c562c;
 $brown: #43353a;
 $lightBrown: #8d7971;
 $medBrown: #998c7a;
@@ -14,7 +15,9 @@ $orange: #f6914e;
 $wave1:#faead8;
 $wave2: #fefaf8;
 $lightWave2: #ba9c8a;
-
+p{    
+    line-height: 1em;
+}
 .container{
     font-family: 'Fira Sans', sans-serif;    
     img{padding: 0;}
@@ -51,11 +54,7 @@ $lightWave2: #ba9c8a;
     line-height: 1em;
     background-color:$wave2;
     padding-bottom: 20%;
-    img{width: 100%;}
-    p{
-        font-size: 1.3vw;
-        line-height: 1em;
-    }
+    img{width: 100%;}    
     .row:first-child{
         .col-12:nth-child(2){
             margin-top: 3%;
@@ -74,6 +73,32 @@ $lightWave2: #ba9c8a;
         background-color: $white;       
     }
 }
+.third-row{
+    padding-bottom: 20%;
+    background-color: $wave1;
+    text-align: center;
+    img{
+        width: 8%;
+        margin: 4% 0;
+    }
+    .row:first-child{
+        .col-12:nth-child(2){
+            margin-bottom: 3%;
+        }
+    }
+    .innerImage{
+        width: 40%;
+        margin-top: 15%;
+    }
+    .middleImage{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{width: 100%;}
+    }
+    button{background-color: $darkGreen !important; padding: 1% 5%;border-color: $darkGreen;}
+}
 button{font-size: inherit;color:$white !important;padding:1% 5%;}
 .primaryText{
     font-family: $primaryFont;
@@ -83,9 +108,15 @@ button{font-size: inherit;color:$white !important;padding:1% 5%;}
     font-family: $secondaryFont;
     font-weight: $secondaryWeight;
 }
+.darkGreen{color: $darkGreen;}
 .brown{color:$brown}
 .lightBrown{color:$lightBrown;}
 .medbrown{color:$medBrown;}
+.bordered{
+    padding: 4% 0;
+    margin-bottom: 5%;
+    border-bottom: 2px solid $orange    ;
+}
 /*
 .first-row{
     background-image: url(./Image/homepage-bg.png);
