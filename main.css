@@ -1,5 +1,11 @@
 .container {
+  font-family: "Fira Sans", sans-serif;
   background-color: red;
+}
+
+.primaryText {
+  font-family: "Freight Sans Pro";
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=main.css.map */

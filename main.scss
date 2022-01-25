@@ -1,3 +1,25 @@
+//fonts
+$primaryFont: 'Freight Sans Pro';
+$primaryWeight: 400;
+$secondaryFont: 'Fira Sans', sans-serif;
+$secondaryWeight: 900;
+
+//colors
+$white: #FFFFFF;
+$black: #000000;
+$brown: #43353a;
+$lightBrown: #8d7971;
+$medBrown: #998c7a;
+$orange: #f6914e;
+$wave1:#faead8;
+$wave2: #fcf4ef;
+$lightWave2: #ba9c8a;
+
 .container{
+    font-family: 'Fira Sans', sans-serif;
     background-color: red;
+}
+.primaryText{
+    font-family: 'Freight Sans Pro';
+    font-weight: 400;
 }
